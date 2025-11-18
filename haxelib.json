@@ -1,0 +1,17 @@
+{
+  "name": "heaps-iframe",
+  "url" : "https://github.com/c-g-dev/heaps-iframe",
+  "description": "Utility for embedding Heaps.io applications in iframes",
+  "license": "MIT",
+  "tags": [
+    "heaps", "util"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "cgdev"
+  ],
+  "releasenote": "Initial release",
+  "version": "1.0.0",
+  "dependencies": {
+  }
+}

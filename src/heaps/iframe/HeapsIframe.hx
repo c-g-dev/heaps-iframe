@@ -48,13 +48,11 @@ class HeapsIframe {
 		final sandboxDefault = "allow-scripts allow-same-origin allow-pointer-lock allow-forms allow-popups allow-popups-to-escape-sandbox allow-modals";
 		iframe.setAttribute("sandbox", options.sandbox != null ? options.sandbox : sandboxDefault);
 
-		// Sizing and basic styles
 		iframe.style.border = "0";
 		iframe.style.display = "block";
 		iframe.style.width = toCssSize(options.width, "100%");
 		iframe.style.height = toCssSize(options.height, "600px");
 
-		// Additional styles (if provided)
 		if (options.style != null) {
 			for (k in options.style.keys()) {
 				untyped iframe.style[k] = options.style[k];
@@ -65,7 +63,6 @@ class HeapsIframe {
 		final html = buildIframeHtml(baseHref, options.jsUrl, background);
 
 		iframe.src = "about:blank";
-		// Use attribute to set srcdoc to avoid depending on extern field presence
 		iframe.setAttribute("srcdoc", html);
 
 		container.appendChild(iframe);
