@@ -1,0 +1,15 @@
+{
+  "name": "heaps-iframe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "build:hello-world-heaps": "cd tests/data/hello-world-heaps && haxe build.hxml",
+    "build:heaps-iframe-build": "cd tests/data/heaps-iframe-build && haxe build.hxml"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
+
+

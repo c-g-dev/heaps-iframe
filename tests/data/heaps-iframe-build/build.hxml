@@ -1,0 +1,7 @@
+-cp src
+-cp ../../../src
+-main TestHeapsIframe
+-js ../www/heaps-iframe-test.js
+-dce full
+
+

@@ -1,0 +1,7 @@
+-cp src
+-lib heaps
+-main Main
+-js ../www/hello-world.js
+-dce full
+
+
