@@ -30,10 +30,8 @@ jobs:
       - name: Build Heaps iframe example
         run: npm run build:heaps-iframe-build
 
-      - name: Install Playwright browsers
-        uses: microsoft/playwright-github-action@v1
-        with:
-          with-deps: true
+      - name: Install Playwright browsers and dependencies
+        run: npx playwright install --with-deps
 
       - name: Run Playwright tests
         run: npm test
